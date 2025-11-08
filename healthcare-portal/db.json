@@ -1,0 +1,142 @@
+{
+  "patients": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "age": 35,
+      "condition": "Diabetes Type 2",
+      "goalsMet": 3,
+      "totalGoals": 4,
+      "status": "Good"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "age": 42,
+      "condition": "Hypertension",
+      "goalsMet": 2,
+      "totalGoals": 4,
+      "status": "Needs Attention"
+    },
+    {
+      "id": "3",
+      "name": "Mike Johnson",
+      "age": 28,
+      "condition": "Obesity",
+      "goalsMet": 4,
+      "totalGoals": 4,
+      "status": "Excellent"
+    },
+    {
+      "id": "4",
+      "name": "Sarah Wilson",
+      "age": 55,
+      "condition": "Heart Disease",
+      "goalsMet": 1,
+      "totalGoals": 4,
+      "status": "Critical"
+    }
+  ],
+  "healthData": {
+    "1": {
+      "2024-12-15": {
+        "steps": 8500,
+        "water": 6,
+        "sleep": 7.5,
+        "heartRate": 72
+      },
+      "2024-12-16": {
+        "steps": 12000,
+        "water": 8,
+        "sleep": 6.8,
+        "heartRate": 68
+      },
+      "2024-12-19": {
+        "steps": 9500,
+        "water": 7,
+        "sleep": 8,
+        "heartRate": 70
+      },
+      "2024-12-20": {
+        "steps": 11000,
+        "water": 6,
+        "sleep": 7.2,
+        "heartRate": 75
+      },
+      "2024-12-21": {
+        "steps": 8500,
+        "water": 6,
+        "sleep": 7.5,
+        "heartRate": 72
+      },
+      "2024-12-22": {
+        "steps": 12000,
+        "water": 8,
+        "sleep": 6.8,
+        "heartRate": 68
+      },
+      "2025-11-04": {
+        "steps": 10,
+        "water": 11,
+        "sleep": 12,
+        "heartRate": 13
+      },
+      "2025-11-05": {
+        "steps": 1,
+        "water": 2,
+        "sleep": 3,
+        "heartRate": 4
+      },
+      "2025-11-06": {
+        "steps": 12,
+        "water": 2,
+        "sleep": 3,
+        "heartRate": 4
+      },
+      "2025-11-03": {
+        "steps": 1,
+        "water": 2,
+        "sleep": 3,
+        "heartRate": 4
+      },
+      "2025-11-20": {
+        "steps": 1,
+        "water": 2,
+        "sleep": 3,
+        "heartRate": 4
+      },
+      "2025-10-02": {
+        "steps": 1,
+        "water": 3,
+        "sleep": 2,
+        "heartRate": 4
+      },
+      "2025-11-02": {
+        "steps": 500,
+        "water": 5
+      }
+    },
+    "2": {
+      "2024-12-20": {
+        "steps": 5000,
+        "water": 4,
+        "sleep": 6,
+        "heartRate": 80
+      },
+      "2024-12-21": {
+        "steps": 7500,
+        "water": 5,
+        "sleep": 7,
+        "heartRate": 78
+      }
+    },
+    "3": {
+      "2024-12-21": {
+        "steps": 15000,
+        "water": 10,
+        "sleep": 8.5,
+        "heartRate": 65
+      }
+    }
+  }
+}
