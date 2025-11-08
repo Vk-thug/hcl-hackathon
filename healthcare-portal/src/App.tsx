@@ -1,10 +1,8 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import PatientDashboard from './pages/PatientDashboard'
-import HealthCareProviderDashboard from './pages/HealthCareProviderDashboard'
-import './App.css'
 import { Fragment, lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import { ModeToggle } from "./components/custom/mode-toggle";
+import HealthCareProviderDashboard from "./pages/HealthCareProviderDashboard";
+import PatientDashboard from "./pages/PatientDashboard";
 
 // =============================================================================
 // LAZY LOAD ALL COMPONENTS
@@ -21,14 +19,6 @@ const PatientProfile = lazy(() =>
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<PatientDashboard />} />
-        <Route path="/patient" element={<PatientDashboard />} />
-        <Route path="/provider" element={<HealthCareProviderDashboard />} />
-      </Routes>
-    </Router>
-  )
     <Fragment>
       <Suspense fallback={<div>loading</div>}>
         <Routes>
@@ -47,6 +37,8 @@ function App() {
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/profile" element={<PatientProfile />} />
+          <Route path="/dashboard" element={<PatientDashboard />} />
+          <Route path="/provider" element={<HealthCareProviderDashboard />} />
 
         </Routes>
       </Suspense>

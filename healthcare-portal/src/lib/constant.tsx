@@ -1,15 +1,15 @@
 // src/lib/constant.ts
 import { IconWorldSearch } from "@tabler/icons-react";
 import {
-    Info,
-    LogOut,
-    Settings,
-    SquarePenIcon
+  Info,
+  LogOut,
+  Settings,
+  SquarePenIcon
 } from "lucide-react";
 import type {
-    NavigationItemData,
-    UserProfileData,
-    WorkspaceLayoutConfig
+  NavigationItemData,
+  UserProfileData,
+  WorkspaceLayoutConfig
 } from "./types/type";
 
 export const BASE_API_URL = `http://localhost:3001/api`;
@@ -66,9 +66,9 @@ export const getMenuSections = () => [
     items: [
       {
         type: "link" as const,
-        label: "Settings",
+        label: "Profile",
         icon: <Settings className="w-4 h-4" />,
-        href: "/settings",
+        href: "/profile",
         external: false,
       },
       {

@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import Chart from '../components/Chart';
-import ProgressBar from '../components/ProgressBar';
-import PatientModal from '../components/PatientModal';
+import WorkspaceApp from '@/components/layout/workspace-app';
 import { Button, TextField } from '@mui/material';
+import React, { Fragment, useEffect, useState } from 'react';
 import ApiService from '../api';
+import Chart from '../components/Chart';
+import PatientModal from '../components/PatientModal';
+import ProgressBar from '../components/ProgressBar';
 import { API_ENDPOINTS } from '../constants';
 
 const PatientDashboard: React.FC = () => {
@@ -190,6 +191,8 @@ const PatientDashboard: React.FC = () => {
   };
 
   return (
+    <Fragment>
+      <WorkspaceApp>
     <div style={containerStyle}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
         <h1 style={{ fontSize: '2.5rem', margin: 0, color: '#1F2937' }}>Patient Dashboard</h1>
@@ -278,7 +281,9 @@ const PatientDashboard: React.FC = () => {
         onDataSaved={fetchHealthData}
         key={refreshKey}
       />
-    </div>
+        </div>
+        </WorkspaceApp>
+      </Fragment>
   );
 };
 

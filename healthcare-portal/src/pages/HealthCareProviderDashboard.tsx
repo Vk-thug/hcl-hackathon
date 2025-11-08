@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { Paper, Typography, Box, Chip } from '@mui/material';
-import PatientDetailsModal from '../components/PatientDetailsModal';
+import WorkspaceApp from '@/components/layout/workspace-app';
+import { Box, Chip, Paper, Typography } from '@mui/material';
+import React, { Fragment, useEffect, useState } from 'react';
 import ApiService from '../api';
+import PatientDetailsModal from '../components/PatientDetailsModal';
 import { API_ENDPOINTS } from '../constants';
 
 const HealthCareProviderDashboard: React.FC = () => {
@@ -51,6 +52,8 @@ const HealthCareProviderDashboard: React.FC = () => {
   };
 
   return (
+    <Fragment>
+      <WorkspaceApp>
     <div style={containerStyle}>
       <h1 style={{ fontSize: '2.5rem', marginBottom: '2rem', color: '#1F2937' }}>
         Healthcare Provider Dashboard
@@ -118,7 +121,9 @@ const HealthCareProviderDashboard: React.FC = () => {
         onClose={() => setModalOpen(false)} 
         patient={selectedPatient} 
       />
-    </div>
+        </div>
+        </WorkspaceApp>
+      </Fragment>
   );
 };
 
