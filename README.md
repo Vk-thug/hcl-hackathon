@@ -242,6 +242,23 @@ This MVP includes basic HIPAA compliance measures:
 - ✅ Consent management
 - ✅ Privacy policy
 
+Work Breakdown structure:
+- Vikram
+   Login page/Registration Page and profile Page
+
+- Latha
+    Patient Dashboard
+    Healthcare Dashboard
+    Goal tracker
+
+- Praveen
+    Healthcare portal (Public health Information)
+    Legal and complience Pages
+    Remainders
+    Health Tips blog
+    
+
+
 ## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
